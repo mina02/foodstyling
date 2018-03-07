@@ -1,0 +1,284 @@
+<!DOCTYPE html1>
+<head>
+	<meta charset="utf-8">
+	<title>푸드 스타일링 가이드</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta property="og:url" content="http://village30.cafe24.com">
+<meta property="og:type" content="website">
+<meta property="og:title" content="푸드 스타일링-어떻게 하는 걸까?">
+<meta property="og:image" content="./img/img-00.jpg">
+<meta property="og:description" content="푸드스타일링이 무엇인지, 어떻게 하는지 궁금한 사람들을 위한 푸드스타일링 가이드"> 
+<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="wrap">
+<nav>
+
+        <div>
+          <svg id="menu-icon" fill="#000000" height="40" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg" onclick="nav.style.left = '0px';">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+      </svg>
+
+           <a href="./index.html" target="_self">푸드 스타일링 가이드</a>
+        </div>
+        <ul id="nav">
+           <li><svg id="close" fill="gray" height="30" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg" onclick="nav.style.left='-250px';">Close
+           <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+           <path d="M0 0h24v24H0z" fill="none"/>
+           </svg></li>
+           <li><a href="./index2.html" target="_self">팬케이크</a></li>
+           <li><a href="./doc1.html" target="_self">샐러드</a></li>
+           <li><a href="./doc2.html" target="_self">국수</a></li>
+           <li><a href="./doc3.html" target="_self">에그인헬</a></li>
+           <li><a href="./doc4.html" target="_self">모히또</a></li>
+        </ul>
+        </nav>
+</div>
+<header>
+<div class="box">
+<div class="slideshow-container"> 
+<a href="./index.html" target="_self">
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="./img/img-18.jpg" style="width:100%">
+    <div class="text"><img src="./img/logo.png" style="width:50%;animation-name: example;
+      animation-duration:3s;"></div></a>
+  </div>
+
+<a href="./index2.html" target="_self">
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="./img/img-19.jpg" style="width:100%">
+    <div class="text"><img src="./img/logo.png" style="width:50%"></div></a>
+  </div>
+
+<a href="./doc1.html" target="_self">
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="./img/img-23.jpg" style="width:100%">
+    <div class="text"><img src="./img/logo.png" style="width:50%"></div></a>
+  </div>  
+
+<a href="./doc2.html" target="_self">
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="./img/img-22.jpg" style="width:100%">
+    <div class="text"><img src="./img/logo.png" style="width:50%"></div></a>
+  </div>
+
+<a href="./doc3.html" target="_self">
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="./img/img-20.jpg" style="width:100%">
+    <div class="text"><img src="./img/logo.png" style="width:50%"></div></a>
+  </div>
+
+<a href="./doc4.html" target="_self">
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="./img/img-21.jpg" style="width:100%">
+    <div class="text"><img src="./img/logo.png" style="width:50%"></div></a>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</header>
+</body>
+<style>
+*{font-family: 'Spoqa Han Sans', 'Sans-serif'; }
+body, ul {margin: 0; padding: 0;}
+div.wrap{width:100%;margin:auto;}
+    nav { background: white; margin:0 auto; margin-bottom: 1em; }
+    nav{width: 100%; position:fixed; background: white; height: 50px; margin-bottom: 0;top:0px; left: 0px;z-index: 9999;}
+    nav a{text-decoration: none; color:black; height: 40px; line-height: 40px; background: none; display: block; padding-top: 5px; padding-left: 5px; padding-right: 5px; font-weight: regular;float: left;margin-right: 1em; }
+    nav a:hover{ color: lightgrey; border-bottom: 3px solid lightgrey; }
+    nav ul{list-style-type: none; float:right;  text-align:center; width: 400px;}
+    nav div a{margin-left: 3em;text-align: right;}
+    nav #menu-icon{display: none; float: left; position: absolute; margin:7px;}
+    nav #close{display: none;}
+    nav li:first-child{display: none; }
+
+* {box-sizing:border-box}
+.mySlides {display:none; }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2000px;
+  max-height:980px;
+  overflow: hidden; 
+  position: relative;
+  margin: auto;
+
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: 700;
+  font-size: 35px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 90px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "previous button" to the left */
+.prev {
+  left: 90px;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: black(0,0,0,0.3);
+}
+
+/* Caption text */
+.text {
+  top: 34%;  
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+font-size: 3.5em;   
+  color: blue; 
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  width: calc(100%-6%);
+  margin-top:1%;
+  margin-left:3%;
+  margin-bottom:2%;
+  margin-right:3%;
+  text-align: center;
+  padding-top: 20%;
+  padding-right: 46%;
+  padding-left: 47%;
+  padding-bottom: 23%;
+  border: 9px solid white;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes example {
+      from {opacity: 0;}
+      to {opacity: 1;}
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/* Mobile */
+@media all
+  and (max-width: 600px){
+    div.wrap{width:100%;}
+     nav{width: 600px; position: absolute; top: 0; left: 0;height: 50px;}
+     nav #menu-icon{float: left; cursor: pointer; display: block; left: 0; }
+     nav a{float: left; font-size: 1em; margin-left: 1em; text-align: center;}  
+     nav div a{ font-size: 1em;}
+     nav ul{ transition: all 1s;
+             -webkit-transition: all 1s;
+             background:white; width:150px; 
+             position: absolute; top: 50px;float: left;height: 250px;left: -200px; } 
+     nav #close{float: right; display: block; margin: 7px;}
+     nav #close-button{ float: right; margin:2px; }
+     nav li:first-child{display: block; text-align:right; }
+     .prev, .next {font-size: 1.5em; top: 60%;padding: 5px;}
+     .prev{left:5%;}
+     .next{right:5%;}
+     .text{top: 48%;  }
+     .numbertext{top: 30%;padding-bottom: 18%;border: 4px solid white;}
+     .slideshow-container{}
+} 
+
+/* Tablet */
+@media all and (min-width: 601px) and (max-width: 1024px){
+     nav{width: 100%; position: fixed; height: 50px;}
+     nav a{font-size: 1em;}  
+     nav div a{font-size: 1em; margin-left: 1em;}
+     .prev, .next {font-size: 2em; top: 60%;padding: 5px;}
+     .prev{left:10%;}
+     .next{right:10%;}
+     .text{top: 48%;}
+     .numbertext{top: 25%;padding-bottom: 23%;border: 7px solid white;}
+     .slideshow-container{}
+     main{width:calc(100% - 3em); margin-right: 2em; margin-left: 1em;float: left;}
+     header .top {padding-left: 1.5em;}
+     footer{width:calc(100% - 2em);margin:3em 1em;}
+
+} 
+/* 1366 */
+@media all and (min-width: 1025px) and (max-width: 1366px){
+      .slideshow-container { max-height:670px; overflow: hidden;}
+      .text{top: 38%; }
+      .numbertext{padding-bottom: 20%;}
+} 
+</style>
+
+
+
+

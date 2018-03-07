@@ -1,0 +1,153 @@
+html{font-family: 'Spoqa Han Sans', 'Sans-serif'; }
+	body, h1, ul, main, img {margin: 0; padding: 0;}
+	nav, main, footer{ margin:0 auto; 
+					   margin-bottom: 1em; background: white; }
+	body {background: white;}
+	header{width: 100%; 
+		   height: 400px; 
+		   background-size: 100%; }
+	header div{position: absolute; 
+			   width: 100%; 
+			   height: 400px;}
+	header .top{ position: relative; 
+				 width: 600px; 
+				 padding-top: 90px; 
+				 margin:auto; 
+				 height:auto;}
+    header .top h1{font-size: 1.5em; 
+    			   text-align: left; 
+    			   font-weight: 400; 
+    			   color: white; 
+    			   z-index: 9999; 
+    			   letter-spacing: -2px; 
+    			   line-height: 130%;}
+    header .top h2{padding-top: 100px; 
+    			   font-size: 0.8em; 
+    			   color: white; 
+    			   font-weight: 700;
+    			   padding-bottom: 20px;}
+    header .top em{font-weight:900; 
+    			   font-style: normal; 
+    			   border-bottom: 2px solid white;
+    			   padding-bottom: 5px;}
+    header .top p{font-size: 0.8em;  
+    			  font-weight: bold;
+    			  color: lightgrey; }
+	header .bottom{opacity: 0.5; 
+				   background: black;}
+
+    div.wrap{width:100%;margin:auto;}
+    nav { background: white; margin:0 auto; margin-bottom: 1em; }
+    nav{width: 100%; position:fixed; background: white; height: 50px; margin-bottom: 0;top:0px; left: 0px;z-index: 9999; border-bottom: 1px solid lightgrey;}
+    nav a{text-decoration: none; color:black; height: 40px; line-height: 40px; background: none; display: block; padding-top: 5px; padding-left: 5px; padding-right: 5px; font-weight: regular; float: left;margin-right: 1em; }
+    nav a:hover{ color: lightgrey; border-bottom: 3px solid lightgrey; }
+    nav ul{list-style-type: none; float:right;  text-align:center; width: 400px;}
+    nav div a{margin-left: 3em;text-align: right;}
+    nav #menu-icon{display: none; float: left; position: fixed; margin:7px;}
+    nav #close{display: none;}
+    nav li:first-child{display: none; }
+  main{ width: 600px; 
+      margin: 0 auto; 
+      padding-left: 1em; 
+      padding-right: 1em; 
+      margin-top: 100px;} 
+  main h2{color: black;
+      font-size:0.8em; }
+  main h1{font-size:1.2em;
+      padding-bottom: 0.7cm; }
+  main h3{color: black; font-size:1em; }
+  main h4{font-size:1.2em;
+      padding-bottom: 1cm;
+      padding-top: 1cm;
+      font-weight: regular;}
+  main h5{font-size:1.2em;
+      color: black;
+      line-height: 1.3;
+      word-break: keep-all;
+      text-align: left;
+      font-weight: regular;}
+  main ol li{font-size:1.2em;
+         color: black;
+         line-height: 1.8;
+         word-break: keep-all;
+         text-align: left;
+         font-weight: regular;}
+  main ul li{list-style-type: none; 
+         font-size:1em;
+         color: #636363;
+         line-height: 1.8;
+         word-break: keep-all;
+         text-align: left;
+         font-weight: regular;}
+  main p{font-size:1em;
+       color: grey;
+       line-height: 1.8;
+       word-break: keep-all; 
+       text-align: left; 
+       padding-bottom: 0.7cm;
+       font-weight: light;}
+	main img{width: 100%;
+			 margin-top: 40px;
+			 margin-bottom: 40px;}
+
+	footer p{ color:#636363; }
+    span{font-size: 1em; 
+    	 color:#636363; 
+    	 font-weight: bold;}
+    footer a{text-decoration: none; 
+    		 color:#636363; }
+    footer a:hover{ color:black; }
+    footer hr{border:1px solid grey;}
+    footer{ width:40em;
+    	   margin:0 auto;
+    	   text-align:left;
+    	   height:8em;
+    	   line-height: 200%;
+    	   margin-top: 6em;}
+/* Mobile */
+@media all
+  and (max-width: 600px){
+     div.wrap{width:100%;}
+     nav{width: 600px; position: fixed; top: 0; left: 0; height: 50px;}
+     nav #menu-icon{float: left; cursor: pointer; display: block; left: 0; }
+     nav a{float: left; font-size: 1em; margin-left: 1em; text-align: center;}  
+     nav div a{ font-size: 1em;}
+     nav ul{transition: all 1s;
+            -webkit-transition: all 1s;
+            background:white; 
+            width:150px; position: fixed; 
+            top: 50px;float: left; height: 240px;left: -200px; } 
+     nav #close{float: right; display: block; margin: 7px;}
+     nav #close-button{ float: right; margin:2px; }
+     nav li:first-child{display: block; text-align:right; }
+	   main{width:calc(100% - 3em); margin-right: 2em; margin-left: 1em;float: left;}
+     header{height: 300px;} 
+     header div{ height: 300px;}
+     header .top h2{padding-top: 30px;} 
+	   header .top {padding-left: 1.5em;}
+	   footer{width:calc(100% - 2em);margin:3em 1em;}
+	   .prev, .next {font-size: 1.5em; top: 60%;padding: 5px;}
+       .prev{left:5%;}
+       .next{right:5%;}
+       .text{  font-size: 1.5em; top: 55%;  }
+       .numbertext{top: 30%;padding-bottom: 20%;border: 7px solid white;}
+       .slideshow-container{}
+}
+
+/* Tablet */
+@media all and (min-width: 601px) and (max-width: 1024px){
+     nav{width: 100%; position: fixed; height: 50px;}
+     nav a{font-size: 1em;}  
+     nav div a{font-size: 1em; margin-left: 1em;}
+     .prev, .next {font-size: 1.8em; top: 60%;padding: 5px;}
+     .prev{left:10%;}
+     .next{right:10%;}
+     .text{  font-size: 2.5em; top: 55%;  }
+     .numbertext{top: 25%;padding-bottom: 25%;border: 8px solid white;}
+     .slideshow-container{}
+}
+/* 1366 */
+@media all and (min-width: 901px) and (max-width: 1366px){
+      .slideshow-container { max-height:768px; overflow: hidden;}
+      .numbertext{padding-bottom: 26%;}
+} 
